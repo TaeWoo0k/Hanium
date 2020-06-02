@@ -6,8 +6,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,14 +14,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        >
+        <activity android:name=".gpsWeb"></activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAKclhgX2ojxZBAzBa6wVVh1JZsUNx9G6Y">
+            android:value="AIzaSyAKclhgX2ojxZBAzBa6wVVh1JZsUNx9G6Y"></meta-data>
 
-        </meta-data>
-        <activity android:name=".GPS_EX"></activity>
+        <activity android:name=".GPS_EX" />
         <activity android:name=".Person0" />
         <activity android:name=".ProtectMode" />
         <activity android:name=".Choose" />

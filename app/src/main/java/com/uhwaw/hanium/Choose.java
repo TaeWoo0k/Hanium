@@ -29,7 +29,7 @@ public class Choose extends AppCompatActivity {
         btnPro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ProtectMode.class);
+                Intent intent = new Intent(getApplicationContext(),Person0.class);
                 startActivity(intent);
             }
         });

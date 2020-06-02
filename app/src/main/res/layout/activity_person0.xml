@@ -1,153 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#000000"
-        android:id="@+id/picture"
-        />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginLeft="30dp"
-        >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="이름: @@"
-        android:textSize="20dp"
-        android:id="@+id/name"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="나이: @@"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
-        android:id="@+id/age"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="성별: @@"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
-        android:id="@+id/sex"
-        />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        >
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="횟수"
-            android:id="@+id/count"
-        />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="위치"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/gps"
-            />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="체온"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/tem"
-            />
-
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            >
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="전화"
-                android:id="@+id/tel"
-                />
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="문자"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/mssa"
-                />
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="119"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/nine"
-                />
-
-        </LinearLayout>
-</LinearLayout>
-    <LinearLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        >
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:background="@drawable/t27"
-            android:layout_gravity="center"
-            android:id="@+id/ImTem"
-            android:visibility="gone"
-            />
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:id="@+id/graph"
-            android:visibility="visible"
-            />
-        <TextView
+        android:src="@drawable/top"
+        android:scaleType="fitXY"
+        android:layout_weight="0"/>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:src="@drawable/btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="123ㅂㅁㅈㄷ123"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:id="@+id/tvresult"
-            android:visibility="gone"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/tel"
             />
-
-
-
+        <ImageButton
+            android:src="@drawable/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/gps"
+            />
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:src="@drawable/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/nine"
+            />
+        <ImageButton
+            android:src="@drawable/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/setting"
+            />
+    </LinearLayout>
 </LinearLayout>
